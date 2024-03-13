@@ -1,26 +1,26 @@
 {
     "Shipments": {
-        "TotalNumberOfRecords": "10",
+        "TotalNumberOfRecords": "6",
         "Shipment": [
             {
-                "AssignedToUserId": "abrooks",
+                "AssignedToUserId": "amgr",
                 "DeliveryMethod": "SHP",
-                "ExpectedShipmentDate": "27-10-2017",
-                "OrderNo": "SFS1000001",
+                "ExpectedShipmentDate": "27-10-2015",
+                "OrderNo": "PICK1000001",
                 "ScacAndService": "UPSNGround",
                 "ShipNode": "Mtrx_Store_1",
-                "ShipmentKey": "SFS1000001_SHPKEY",
-                "ShipmentNo": "SFS1000001SHPNO",
+                "ShipmentKey": "TIUO10868001SHP",
+                "ShipmentNo": "TIUO10868001SHPNO",
                 "Status": "Ready for Backroom Pick",
                 "BillToAddress": {
                     "DayPhone": "123456789",
                     "EMailID": "Zymer@org.com",
-                    "FirstName": "Ben",
-                    "LastName": "Zymer",
+                    "FirstName": "John",
+                    "LastName": "Parks",
                     "PersonInfoKey": "1000001"
                 },
                 "ShipmentLines": {
-                    "TotalNumberOfRecords": "4"
+                    "TotalNumberOfRecords": "3"
                 }
             },
             {
@@ -30,18 +30,18 @@
                 "OrderNo": "SFS10002343",
                 "ScacAndService": "UPSNGround",
                 "ShipNode": "Mtrx_Store_1",
-                "ShipmentKey": "SFS1000001_SHPKEY",
-                "ShipmentNo": "SFS1000001SHPNO",
+                "ShipmentKey": "FSR1000001YTEKEY",
+                "ShipmentNo": "FSR1000001YTEKEYNO",
                 "Status": "Ready for Customer Pickup",
                 "BillToAddress": {
                     "DayPhone": "43535233",
-                    "EMailID": "Zymer@org.com",
+                    "EMailID": "rahulbose@org.com",
                     "FirstName": "Rahul",
                     "LastName": "Bose",
                     "PersonInfoKey": "342333333"
                 },
                 "ShipmentLines": {
-                    "TotalNumberOfRecords": "4"
+                    "TotalNumberOfRecords": "2"
                 }
             },
             {
@@ -51,8 +51,8 @@
                 "OrderNo": "SFS123423",
                 "ScacAndService": "UPSNGround",
                 "ShipNode": "Mtrx_Store_1",
-                "ShipmentKey": "SFS1000001_SHPKEY",
-                "ShipmentNo": "SFS1000001SHPNO",
+                "ShipmentKey": "SFS10868001SHPKEY",
+                "ShipmentNo": "SFS10868001SHPNO",
                 "Status": "Ready for Packing",
                 "BillToAddress": {
                     "DayPhone": "34534545",
@@ -62,7 +62,7 @@
                     "PersonInfoKey": "3243243"
                 },
                 "ShipmentLines": {
-                    "TotalNumberOfRecords": "4"
+                    "TotalNumberOfRecords": "1"
                 }
             },
             {
@@ -72,8 +72,8 @@
                 "OrderNo": "SFS3242443",
                 "ScacAndService": "UPSNGround",
                 "ShipNode": "Mtrx_Store_1",
-                "ShipmentKey": "SFS1000001_SHPKEY",
-                "ShipmentNo": "SFS1000001SHPNO",
+                "ShipmentKey": "SFT58581SHPKEY",
+                "ShipmentNo": "SFT58581SHPNO",
                 "Status": "Packing in Progress",
                 "BillToAddress": {
                     "DayPhone": "3422432234",
@@ -90,11 +90,11 @@
                 "AssignedToUserId": "qddefe",
                 "DeliveryMethod": "NHI",
                 "ExpectedShipmentDate": "12-06-2015",
-                "OrderNo": "SFS1000001",
+                "OrderNo": "SFS3242443",
                 "ScacAndService": "UPSNGround",
                 "ShipNode": "Mtrx_Store_1",
-                "ShipmentKey": "SFS1000001_SHPKEY",
-                "ShipmentNo": "SFS1000001SHPNO",
+                "ShipmentKey": "YTR9699001SHPKEY",
+                "ShipmentNo": "YTR9699001SHPNO",
                 "Status": "Shipped/Picked",
                 "BillToAddress": {
                     "DayPhone": "93823242",
@@ -104,7 +104,7 @@
                     "PersonInfoKey": "3242343"
                 },
                 "ShipmentLines": {
-                    "TotalNumberOfRecords": "2"
+                    "TotalNumberOfRecords": "3"
                 }
             },
             {
@@ -114,8 +114,8 @@
                 "OrderNo": "SFS799899",
                 "ScacAndService": "UPSNGround",
                 "ShipNode": "Mtrx_Store_1",
-                "ShipmentKey": "SFS1000001_SHPKEY",
-                "ShipmentNo": "SFS1000001SHPNO",
+                "ShipmentKey": "SFS1034534001_SHPKEY",
+                "ShipmentNo": "SFS10826401SHPNO",
                 "Status": "Cancelled",
                 "BillToAddress": {
                     "DayPhone": "09807966",
@@ -125,91 +125,7 @@
                     "PersonInfoKey": "99658999"
                 },
                 "ShipmentLines": {
-                    "TotalNumberOfRecords": "4"
-                }
-            },
-            {
-                "AssignedToUserId": "iohiohis",
-                "DeliveryMethod": "SHI",
-                "ExpectedShipmentDate": "20-12-2007",
-                "OrderNo": "SFS796889",
-                "ScacAndService": "UPSNGround",
-                "ShipNode": "Mtrx_Store_1",
-                "ShipmentKey": "SFS1000001_SHPKEY",
-                "ShipmentNo": "SFS1000001SHPNO",
-                "Status": "Ready for Packing",
-                "BillToAddress": {
-                    "DayPhone": "9807969",
-                    "EMailID": "Ziooh@org.com",
-                    "FirstName": "Rohit",
-                    "LastName": "Kohli",
-                    "PersonInfoKey": "879707"
-                },
-                "ShipmentLines": {
                     "TotalNumberOfRecords": "3"
-                }
-            },
-            {
-                "AssignedToUserId": "ugiyyus",
-                "DeliveryMethod": "OUP",
-                "ExpectedShipmentDate": "15-09-2020",
-                "OrderNo": "SFS1000001",
-                "ScacAndService": "UPSNGround",
-                "ShipNode": "Mtrx_Store_1",
-                "ShipmentKey": "SFS1000001_SHPKEY",
-                "ShipmentNo": "SFS1000001SHPNO",
-                "Status": "Cancelled",
-                "BillToAddress": {
-                    "DayPhone": "123456789",
-                    "EMailID": "Ruiuiv@org.com",
-                    "FirstName": "",
-                    "LastName": "Piyff",
-                    "PersonInfoKey": "796767"
-                },
-                "ShipmentLines": {
-                    "TotalNumberOfRecords": "9"
-                }
-            },
-            {
-                "AssignedToUserId": "dvsdvs",
-                "DeliveryMethod": "RTP",
-                "ExpectedShipmentDate": "15-04-2016",
-                "OrderNo": "SFS435435",
-                "ScacAndService": "UPSNGround",
-                "ShipNode": "Mtrx_Store_1",
-                "ShipmentKey": "SFS1000001_SHPKEY",
-                "ShipmentNo": "SFS1000001SHPNO",
-                "Status": "Packed",
-                "BillToAddress": {
-                    "DayPhone": "123456789",
-                    "EMailID": "eaffe@org.com",
-                    "FirstName": "Anant",
-                    "LastName": "Modi",
-                    "PersonInfoKey": "4223523"
-                },
-                "ShipmentLines": {
-                    "TotalNumberOfRecords": "6"
-                }
-            },
-            {
-                "AssignedToUserId": "amgr",
-                "DeliveryMethod": "PICK",
-                "ExpectedShipmentDate": "28-10-2017",
-                "OrderNo": "PICK1000001",
-                "ScacAndService": "",
-                "ShipNode": "Mtrx_Store_1",
-                "ShipmentKey": "PICK1000001_SHPKEY",
-                "ShipmentNo": "PICK1000001SHPNO",
-                "Status": "Ready for Backroom Pick",
-                "BillToAddress": {
-                    "DayPhone": "1234567890",
-                    "EMailID": "adoyle@org.com",
-                    "FirstName": "Abby",
-                    "LastName": "Doyle",
-                    "PersonInfoKey": "2000001"
-                },
-                "ShipmentLines": {
-                    "TotalNumberOfRecords": "6"
                 }
             }
         ]

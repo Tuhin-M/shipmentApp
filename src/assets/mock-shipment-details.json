@@ -3,12 +3,12 @@
         {
             "AssignedToUserId": "amgr",
             "Status": "Ready for Backroom Pick",
-            "DeliveryMethod": "PICK",
-            "ExpectedShipmentDate": "27-10-2018",
+            "DeliveryMethod": "SHP",
+            "ExpectedShipmentDate": "27-10-2015",
             "OrderNo": "PICK1000001",
             "ScacAndService": "",
-            "ShipmentKey": "PICK1000001SHPKEY",
-            "ShipmentNo": "PICK1000001SHPNO",
+            "ShipmentKey": "TIUO10868001SHP",
+            "ShipmentNo": "TIUO10868001SHPNO",
             "BillToAddress": {
                 "FirstName": "John",
                 "LastName": "Parks",
@@ -38,7 +38,7 @@
                 "PersonInfoKey": "100001"
             },
             "ShipmentLines": {
-                "TotalNumberOfRecords": "2",
+                "TotalNumberOfRecords": "3",
                 "ShipmentLine": [
                     {
                         "Quantity": "2",
@@ -47,7 +47,7 @@
                             "ItemDetails": {
                                 "DisplayUnitOfMeasure": "Each",
                                 "Description": "Frigidaire Window Air Conditioner 1200-BTU",
-                                "ImageUrl": "https://m.media-amazon.com/images/I/71fgBwbLjlL.jpg",
+                                "ImageUrl": "./assets/ac.jpg",
                                 "ItemID": "100001"
                             }
                         }
@@ -59,7 +59,7 @@
                             "ItemDetails": {
                                 "DisplayUnitOfMeasure": "Each",
                                 "Description": "Hunter Regalia 60-in New Bronze Ceiling Fan",
-                                "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Ventilatore_a_soffitto_%283%29.png",
+                                "ImageUrl": "./assets/ceiling.png",
                                 "ItemID": "100002 "
                             }
                         }
@@ -71,7 +71,7 @@
                             "ItemDetails": {
                                 "DisplayUnitOfMeasure": "Each",
                                 "Description": "Analog CCTV Camera HD 1080P 4-in-1",
-                                "ImageUrl": "https://images-cdn.ubuy.co.in/63478775a4b79627ee5a8513-ubuy-online-shopping.jpg",
+                                "ImageUrl": "./assets/cctv.jpg",
                                 "ItemID": "100002 "
                             }
                         }
@@ -80,18 +80,18 @@
             }
         },
         {
-            "AssignedToUserId": "amgr",
-            "Status": "Ready for Backroom Pick",
-            "DeliveryMethod": "PICK",
-            "ExpectedShipmentDate": "27-10-2018",
-            "OrderNo": "SFS10000",
-            "ScacAndService": "",
-            "ShipmentKey": "SFS1000001SHPNOKEY",
-            "ShipmentNo": "SFS1000001SHPNO",
+            "AssignedToUserId": "rrevre",
+            "Status": "Ready for Customer Pickup",
+            "DeliveryMethod": "ERF",
+            "ExpectedShipmentDate": "30-12-2018",
+            "OrderNo": "SFS3242443",
+            "ScacAndService": "UPSNGround",
+            "ShipmentKey": "FSR1000001YTEKEY",
+            "ShipmentNo": "FSR1000001YTEKEYNO",
             "BillToAddress": {
-                "FirstName": "John",
-                "LastName": "Parks",
-                "EmailID": "john@example.com",
+                "FirstName": "Rahul",
+                "LastName": "Bose",
+                "EmailID": "rahulbose@org.com",
                 "Phonenumber": "1234567890",
                 "AddressID": "200001",
                 "AddressLine1": "987, Broadview Avenue",
@@ -103,9 +103,9 @@
                 "PersonInfoKey": "1000002"
             },
             "ToAddress": {
-                "FirstName": "Abby",
-                "LastName": "Doyle",
-                "EmailID": "adoyle@example.com",
+                "FirstName": "Rahul",
+                "LastName": "Bose",
+                "EmailID": "rahulbose@example.com",
                 "DayPhone": "6478390821",
                 "AddressID": "200002",
                 "AddressLine1": "6849, Wolfe Road",
@@ -114,7 +114,7 @@
                 "Country": "US",
                 "State": "CA",
                 "ZipCode": "94049",
-                "PersonInfoKey": "100001"
+                "PersonInfoKey": "342333333"
             },
             "ShipmentLines": {
                 "TotalNumberOfRecords": "2",
@@ -126,7 +126,7 @@
                             "ItemDetails": {
                                 "DisplayUnitOfMeasure": "Each",
                                 "Description": "Frigidaire Window Air Conditioner 1200-BTU",
-                                "ImageUrl": "https://m.media-amazon.com/images/I/71fgBwbLjlL.jpg",
+                                "ImageUrl": "./assets/ac.jpg",
                                 "ItemID": "100001"
                             }
                         }
@@ -138,19 +138,7 @@
                             "ItemDetails": {
                                 "DisplayUnitOfMeasure": "Each",
                                 "Description": "Hunter Regalia 60-in New Bronze Ceiling Fan",
-                                "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Ventilatore_a_soffitto_%283%29.png",
-                                "ItemID": "100002 "
-                            }
-                        }
-                    },
-                    {
-                        "Quantity": "3",
-                        "ShipmentLineKey": "PICK10322352SHPLINEKEY",
-                        "OrderLine": {
-                            "ItemDetails": {
-                                "DisplayUnitOfMeasure": "Each",
-                                "Description": "Analog CCTV Camera HD 1080P 4-in-1",
-                                "ImageUrl": "https://images-cdn.ubuy.co.in/63478775a4b79627ee5a8513-ubuy-online-shopping.jpg",
+                                "ImageUrl": "./assets/ceiling.png",
                                 "ItemID": "100002 "
                             }
                         }
@@ -159,19 +147,19 @@
             }
         },
         {
-            "AssignedToUserId": "amgr",
-            "Status": "Ready for Backroom Pick",
-            "DeliveryMethod": "PICK",
-            "ExpectedShipmentDate": "27-10-2018",
-            "OrderNo": "PICK1000001",
+            "AssignedToUserId": "efesfe",
+            "Status": "Ready for Packing",
+            "DeliveryMethod": "BTR",
+            "ExpectedShipmentDate": "11-11-2019",
+            "OrderNo": "SFS123423",
             "ScacAndService": "",
-            "ShipmentKey": "PICK1000001SHPKEY",
-            "ShipmentNo": "PICK1000001SHPNO",
+            "ShipmentKey": "SFS10868001SHPKEY",
+            "ShipmentNo": "SFS10868001SHPNO",
             "BillToAddress": {
-                "FirstName": "John",
-                "LastName": "Parks",
-                "EmailID": "john@example.com",
-                "Phonenumber": "1234567890",
+                "FirstName": "Ramesh",
+                "LastName": "Jain",
+                "EmailID": "rameshjain@example.com",
+                "Phonenumber": "34534545",
                 "AddressID": "200001",
                 "AddressLine1": "987, Broadview Avenue",
                 "AddressLine2": "",
@@ -182,9 +170,9 @@
                 "PersonInfoKey": "1000002"
             },
             "ToAddress": {
-                "FirstName": "Abby",
-                "LastName": "Doyle",
-                "EmailID": "adoyle@example.com",
+                "FirstName": "Ramesh",
+                "LastName": "Jain",
+                "EmailID": "rameshjain@example.com",
                 "DayPhone": "6478390821",
                 "AddressID": "200002",
                 "AddressLine1": "6849, Wolfe Road",
@@ -196,32 +184,8 @@
                 "PersonInfoKey": "100001"
             },
             "ShipmentLines": {
-                "TotalNumberOfRecords": "2",
+                "TotalNumberOfRecords": "1",
                 "ShipmentLine": [
-                    {
-                        "Quantity": "2",
-                        "ShipmentLineKey": "PICK100001SHPLINEKEY",
-                        "OrderLine": {
-                            "ItemDetails": {
-                                "DisplayUnitOfMeasure": "Each",
-                                "Description": "Frigidaire Window Air Conditioner 1200-BTU",
-                                "ImageUrl": "https://m.media-amazon.com/images/I/71fgBwbLjlL.jpg",
-                                "ItemID": "100001"
-                            }
-                        }
-                    },
-                    {
-                        "Quantity": "2",
-                        "ShipmentLineKey": "PICK100002SHPLINEKEY",
-                        "OrderLine": {
-                            "ItemDetails": {
-                                "DisplayUnitOfMeasure": "Each",
-                                "Description": "Hunter Regalia 60-in New Bronze Ceiling Fan",
-                                "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Ventilatore_a_soffitto_%283%29.png",
-                                "ItemID": "100002 "
-                            }
-                        }
-                    },
                     {
                         "Quantity": "3",
                         "ShipmentLineKey": "PICK10322352SHPLINEKEY",
@@ -229,7 +193,7 @@
                             "ItemDetails": {
                                 "DisplayUnitOfMeasure": "Each",
                                 "Description": "Analog CCTV Camera HD 1080P 4-in-1",
-                                "ImageUrl": "https://images-cdn.ubuy.co.in/63478775a4b79627ee5a8513-ubuy-online-shopping.jpg",
+                                "ImageUrl": "./assets/cctv.jpg",
                                 "ItemID": "100002 "
                             }
                         }
@@ -238,19 +202,19 @@
             }
         },
         {
-            "AssignedToUserId": "amgr",
-            "Status": "Ready for Backroom Pick",
-            "DeliveryMethod": "PICK",
-            "ExpectedShipmentDate": "27-10-2018",
-            "OrderNo": "PICK1000001",
-            "ScacAndService": "",
-            "ShipmentKey": "PICK1000001SHPKEY",
-            "ShipmentNo": "PICK1000001SHPNO",
+            "AssignedToUserId": "sasafe",
+            "Status": "Packing in Progress",
+            "DeliveryMethod": "WER",
+            "ExpectedShipmentDate": "30-12-2018",
+            "OrderNo": "SFS3242443",
+            "ScacAndService": "UPSNGround",
+            "ShipmentKey": "SFT58581SHPKEY",
+            "ShipmentNo": "SFT58581SHPNO",
             "BillToAddress": {
-                "FirstName": "John",
-                "LastName": "Parks",
-                "EmailID": "john@example.com",
-                "Phonenumber": "1234567890",
+                "FirstName": "Akash",
+                "LastName": "Kumar",
+                "EmailID": "wefew@org.com",
+                "Phonenumber": "3422432234",
                 "AddressID": "200001",
                 "AddressLine1": "987, Broadview Avenue",
                 "AddressLine2": "",
@@ -258,12 +222,12 @@
                 "Country": "US",
                 "State": "NE",
                 "ZipCode": "68101",
-                "PersonInfoKey": "1000002"
+                "PersonInfoKey": "324234"
             },
             "ToAddress": {
-                "FirstName": "Abby",
-                "LastName": "Doyle",
-                "EmailID": "adoyle@example.com",
+                "FirstName": "Akash",
+                "LastName": "Kumar",
+                "EmailID": "wefew@org.com",
                 "DayPhone": "6478390821",
                 "AddressID": "200002",
                 "AddressLine1": "6849, Wolfe Road",
@@ -284,7 +248,7 @@
                             "ItemDetails": {
                                 "DisplayUnitOfMeasure": "Each",
                                 "Description": "Frigidaire Window Air Conditioner 1200-BTU",
-                                "ImageUrl": "https://m.media-amazon.com/images/I/71fgBwbLjlL.jpg",
+                                "ImageUrl": "./assets/ac.jpg",
                                 "ItemID": "100001"
                             }
                         }
@@ -296,7 +260,7 @@
                             "ItemDetails": {
                                 "DisplayUnitOfMeasure": "Each",
                                 "Description": "Hunter Regalia 60-in New Bronze Ceiling Fan",
-                                "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Ventilatore_a_soffitto_%283%29.png",
+                                "ImageUrl": "./assets/ceiling.png",
                                 "ItemID": "100002 "
                             }
                         }
@@ -308,7 +272,7 @@
                             "ItemDetails": {
                                 "DisplayUnitOfMeasure": "Each",
                                 "Description": "Analog CCTV Camera HD 1080P 4-in-1",
-                                "ImageUrl": "https://images-cdn.ubuy.co.in/63478775a4b79627ee5a8513-ubuy-online-shopping.jpg",
+                                "ImageUrl": "./assets/cctv.jpg",
                                 "ItemID": "100002 "
                             }
                         }
@@ -317,19 +281,19 @@
             }
         },
         {
-            "AssignedToUserId": "amgr",
-            "Status": "Ready for Backroom Pick",
-            "DeliveryMethod": "PICK",
-            "ExpectedShipmentDate": "27-10-2018",
-            "OrderNo": "PICK1000001",
-            "ScacAndService": "",
-            "ShipmentKey": "PICK1000001SHPKEY",
-            "ShipmentNo": "PICK1000001SHPNO",
+            "AssignedToUserId": "qddefe",
+            "Status": "Shipped/Picked",
+            "DeliveryMethod": "NHI",
+            "ExpectedShipmentDate": "30-12-2018",
+            "OrderNo": "SFS3242443",
+            "ScacAndService": "UPSNGround",
+            "ShipmentKey": "YTR9699001SHPKEY",
+            "ShipmentNo": "YTR9699001SHPNO",
             "BillToAddress": {
-                "FirstName": "John",
-                "LastName": "Parks",
-                "EmailID": "john@example.com",
-                "Phonenumber": "1234567890",
+                "FirstName": "Raja",
+                "LastName": "Singh",
+                "EmailID": "Raja@org.com",
+                "Phonenumber": "93823242",
                 "AddressID": "200001",
                 "AddressLine1": "987, Broadview Avenue",
                 "AddressLine2": "",
@@ -337,11 +301,11 @@
                 "Country": "US",
                 "State": "NE",
                 "ZipCode": "68101",
-                "PersonInfoKey": "1000002"
+                "PersonInfoKey": "3242343"
             },
             "ToAddress": {
-                "FirstName": "Abby",
-                "LastName": "Doyle",
+                "FirstName": "Akash",
+                "LastName": "Kumar",
                 "EmailID": "adoyle@example.com",
                 "DayPhone": "6478390821",
                 "AddressID": "200002",
@@ -363,7 +327,7 @@
                             "ItemDetails": {
                                 "DisplayUnitOfMeasure": "Each",
                                 "Description": "Frigidaire Window Air Conditioner 1200-BTU",
-                                "ImageUrl": "https://m.media-amazon.com/images/I/71fgBwbLjlL.jpg",
+                                "ImageUrl": "./assets/ac.jpg",
                                 "ItemID": "100001"
                             }
                         }
@@ -375,7 +339,7 @@
                             "ItemDetails": {
                                 "DisplayUnitOfMeasure": "Each",
                                 "Description": "Hunter Regalia 60-in New Bronze Ceiling Fan",
-                                "ImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Ventilatore_a_soffitto_%283%29.png",
+                                "ImageUrl": "./assets/ceiling.png",
                                 "ItemID": "100002 "
                             }
                         }
@@ -387,7 +351,86 @@
                             "ItemDetails": {
                                 "DisplayUnitOfMeasure": "Each",
                                 "Description": "Analog CCTV Camera HD 1080P 4-in-1",
-                                "ImageUrl": "https://images-cdn.ubuy.co.in/63478775a4b79627ee5a8513-ubuy-online-shopping.jpg",
+                                "ImageUrl": "./assets/cctv.jpg",
+                                "ItemID": "100002 "
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "AssignedToUserId": "uvuys",
+            "Status": "Ready for Backroom Pick",
+            "DeliveryMethod": "WYR",
+            "ExpectedShipmentDate": "17-07-2015",
+            "OrderNo": "SFS799899",
+            "ScacAndService": "",
+            "ShipmentKey": "SFS10826401SHPKEY",
+            "ShipmentNo": "SFS10826401SHPNO",
+            "BillToAddress": {
+                "FirstName": "Ayan",
+                "LastName": "Roy",
+                "EmailID": "ayanroy@example.com",
+                "Phonenumber": "09807966",
+                "AddressID": "200001",
+                "AddressLine1": "987, Broadview Avenue",
+                "AddressLine2": "",
+                "City": "Omaha",
+                "Country": "US",
+                "State": "NE",
+                "ZipCode": "68101",
+                "PersonInfoKey": "99658999"
+            },
+            "ToAddress": {
+                "FirstName": "Ayan",
+                "LastName": "Roy",
+                "EmailID": "adoyle@example.com",
+                "DayPhone": "6478390821",
+                "AddressID": "200002",
+                "AddressLine1": "6849, Wolfe Road",
+                "AddressLine2": "123",
+                "City": "Sunnydale",
+                "Country": "US",
+                "State": "CA",
+                "ZipCode": "94049",
+                "PersonInfoKey": "100001"
+            },
+            "ShipmentLines": {
+                "TotalNumberOfRecords": "3",
+                "ShipmentLine": [
+                    {
+                        "Quantity": "2",
+                        "ShipmentLineKey": "PICK100001SHPLINEKEY",
+                        "OrderLine": {
+                            "ItemDetails": {
+                                "DisplayUnitOfMeasure": "Each",
+                                "Description": "Frigidaire Window Air Conditioner 1200-BTU",
+                                "ImageUrl": "./assets/ac.jpg",
+                                "ItemID": "100001"
+                            }
+                        }
+                    },
+                    {
+                        "Quantity": "2",
+                        "ShipmentLineKey": "PICK100002SHPLINEKEY",
+                        "OrderLine": {
+                            "ItemDetails": {
+                                "DisplayUnitOfMeasure": "Each",
+                                "Description": "Hunter Regalia 60-in New Bronze Ceiling Fan",
+                                "ImageUrl": "./assets/ceiling.png",
+                                "ItemID": "100002 "
+                            }
+                        }
+                    },
+                    {
+                        "Quantity": "3",
+                        "ShipmentLineKey": "PICK10322352SHPLINEKEY",
+                        "OrderLine": {
+                            "ItemDetails": {
+                                "DisplayUnitOfMeasure": "Each",
+                                "Description": "Analog CCTV Camera HD 1080P 4-in-1",
+                                "ImageUrl": "./assets/cctv.jpg",
                                 "ItemID": "100002 "
                             }
                         }

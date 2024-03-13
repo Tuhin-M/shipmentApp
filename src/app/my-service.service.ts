@@ -14,7 +14,7 @@ export class MyServiceService {
   }
 
   searchShipments(criteria: any): Observable<any[]> {
-    let results = [shipmentDetails.Shipment];
+    let results = shipmentDetails.Shipment;
     const filteredShipments = results.filter(shipment => {
       let matches = true;
       for (const key in criteria) {
@@ -30,9 +30,14 @@ export class MyServiceService {
   }
   getShipmentDetails(shipmentNo): Observable<any> {
     let results = [shipmentDetails.Shipment];
+    var details = {};
     // This would actually be a search within the shipmentList, but for simplicity, we are returning the mock details directly.
-    const details = results.find(shipment =>
-      shipment['ShipmentNo'] === shipmentNo);
+    for (let i = 0; i < shipmentDetails.Shipment.length; i++) {
+      if (shipmentDetails.Shipment[i].ShipmentNo == shipmentNo) {
+        details = shipmentDetails.Shipment[i]
+        //details = results.find(shipment => shipmentDetails.Shipment[i].ShipmentNo === shipmentNo);
+      }
+    }
     // let details1 = results.filter(
     //   shipment => return shipment.
     // );
