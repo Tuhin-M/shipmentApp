@@ -1,0 +1,35 @@
+.shipment-container {
+    margin: 20px;
+  }
+  
+  .shipment {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .shipment-info, .customer-info {
+    margin-bottom: 10px;
+  }
+  
+  .customer-info {
+    font-weight: bold;
+  }
+  .filter-dropdown{
+    padding-left: 1vw;
+    width: 20vw;
+    margin-left: 74vw;
+    display: block;
+    margin-top: 20vh;
+    padding-bottom: 2vh;
+  }
+  .myButton{
+align-items: left;
+  }
+  a {
+    text-decoration: none;
+   &:hover{
+  border-bottom: 1px solid red
+   }
+  }

@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="text-center mt-5">
+        <h2 class="text-center mb-12">What do you want to do?</h2>
+    </div>
+    <div class="search-wrapper d-flex justify-content-center mt-5">
+        <div class="card shadow-sm p-4">
+
+            <h3 class="card-text text-center mb-4">Shipment Search</h3>
+
+            <form class="row" [formGroup]="searchForm">
+                <div class="col-md-6 mb-3">
+                    <label for="OrderNo" class="form-label">Order #</label>
+                    <input type="text" class="form-control" id="OrderNo" name="OrderNo" formControlName="OrderNo"
+                        placeholder="Enter Order Number" name="OrderNo">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="ShipmentNo" class="form-label">Shipment #</label>
+                    <input type="text" class="form-control" id="ShipmentNo" name="ShipmentNo"
+                        formControlName="ShipmentNo" placeholder="Enter Shipment Number">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="FirstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="FirstName" name="FirstName" formControlName="FirstName"
+                        placeholder="Enter First Name">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="LastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="LastName" name="LastName" formControlName="LastName"
+                        placeholder="Enter Last Name">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="EmailId" class="form-label">Email ID</label>
+                    <input type="text" class="form-control" id="EmailID" name="EmailID" formControlName="EmailID"
+                        placeholder="Enter Email ID">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="PhoneNumber" class="form-label">Phone number</label>
+                    <input type="text" class="form-control" id="Phonenumber" name="Phonenumber"
+                        formControlName="PhoneNumber" placeholder="Enter Phone Number">
+                </div>
+            </form>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-outline-primary me-md-2" (click)="resetForm()" type="button">Reset</button>
+                <button class="btn btn-primary" type="submit" (click)="onSearch()">Search</button>
+            </div>
+        </div>
+
+    </div>
+</div>

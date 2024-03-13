@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+a {
+    color: blue !important; /* Sets the text color to blue */
+    text-decoration: underline ; /* Ensures the link is underlined */
+  }
+
+  a:hover{
+    cursor: pointer;
+  }
+
+  @import "~@fortawesome/fontawesome-free/css/all.css";

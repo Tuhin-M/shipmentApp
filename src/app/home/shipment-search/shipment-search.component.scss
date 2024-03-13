@@ -1,0 +1,27 @@
+.container {
+    max-width: 960px;
+  }
+  
+  .search-wrapper {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Center elements vertically */
+    margin-top: 5rem; /* Adjust margin as needed */
+  }
+  
+  .card {
+    border-radius: 0.5rem;
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    border-radius: 0.25rem;
+  }
+  

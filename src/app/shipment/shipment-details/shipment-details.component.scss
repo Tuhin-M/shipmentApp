@@ -1,0 +1,40 @@
+.filter-dropdown {
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .btn-icon {
+        background: none;
+        border: none;
+    }
+
+    h5 {
+        margin-bottom: 0.5rem;
+    }
+
+    .form-check {
+        margin-bottom: 0.5rem;
+    }
+
+    .actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+}
+
+.bg-gradient{
+    background: #bbb;
+}
+
+.hideView{
+margin-left: 75vw;
+}
+.showView{
+    margin-left: 75vw;
+    }
+

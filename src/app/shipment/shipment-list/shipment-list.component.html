@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="container sticky-top">
+    <div class="d-flex justify-content-between align-items-center mt-4 mb-2 fix-position">
+      <button class="btn btn-icon" (click)="onClose()">
+        <!-- Your SVG icon here -->
+        <i class="fa-solid fa-chevron-left" style="font-size:5vh;">
+        </i>
+      </button>
+      <h3 class="me-auto">Shipment search results ({{filteredShipments.length}})</h3>
+      <button type="button" class="btn btn-outline-primary" (click)="onClose()">Close</button>
+    </div>
+  </div>
+
+
+  <div class="d-flex justify-content-end">
+    <button class="btn btn-icon" (click)="toggleFilter()">
+      <i class="fa-solid fa-filter" style="color: #6396d9;font-size:5vh;"></i>
+    </button>
+  </div>
+
+  <div *ngIf="showFilters" class="card filter-dropdown fixed-top">
+    <h5>Status</h5>
+    <div *ngFor="let status of statusFilters" class="form-check">
+      <input class="form-check-input" type="checkbox" [checked]="myCheckboxValue" [id]="status" [value]="status"
+        (change)="onStatusFilterChange($event, status)">
+      <label class="form-check-label" [for]="status">{{ status }}</label>
+    </div>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end mr-2">
+      <button class="btn myButton btn-outline-secondary me-md-2" type="reset"
+        (click)="resetFilters();myCheckboxValue = false">Reset</button>
+      <button class="btn myButton btn-primary me-md-10" (click)="applyFilters()">Apply</button>
+    </div>
+
+  </div>
+
+  <div class="row card mb-2" *ngFor="let shipment of filteredShipments">
+    <div class="row card-body">
+      <div class="col">
+        <div>{{ shipment.OrderNo }}</div>
+        <div>{{ shipment.ShipmentLines.TotalNumberOfRecords }} products</div>
+        <div>Carrier: {{ shipment.ScacAndService }}</div>
+        <div>Shipment # <a (click)="navigateToDetails(shipment.ShipmentNo)"> {{ shipment.ShipmentNo }}</a></div>
+      </div>
+      <div class="col">
+        <div class="text-primary">{{ shipment.Status }}</div>
+        <div>Assigned to: {{ shipment.AssignedToUserId }}</div>
+        <div>Expected pickup date: {{ shipment.ExpectedShipmentDate }}</div>
+      </div>
+      <div class="col">
+        <div>Customer info</div>
+        <div>{{ shipment.BillToAddress.FirstName }} {{ shipment.BillToAddress.LastName }}</div>
+        <div>{{ shipment.BillToAddress.DayPhone }}</div>
+        <div>{{ shipment.BillToAddress.EMailID }}</div>
+      </div>
+    </div>
+  </div>
+
+
+</div>

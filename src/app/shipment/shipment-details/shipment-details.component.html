@@ -1,0 +1,102 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col mt-4">
+
+            <div class="card-header d-flex justify-content-between align-items-center ">
+                <button class="btn btn-icon" (click)="onClose()">
+                    <!-- Your SVG icon here -->
+                    <i class="fa-solid fa-chevron-left" style="font-size:5vh;">
+                    </i>
+                </button>
+                <h4 class="me-auto">Shipment Details {{ shipment?.ShipmentNo }}</h4>
+                <button class="btn btn-outline-primary" type="button" (click)="onClose()">Close</button>
+            </div>
+
+            <div *ngIf="!hideData" class="row card-body bg-gradient mt-4">
+                <div class="col">
+                    <p class="badge bg-warning text-dark">{{ shipment?.Status }}</p>
+                    <p><strong>Shipment Number:</strong> <br>{{ shipment?.ShipmentNo }}</p>
+                    <p><strong>Carrier:</strong> <br>{{ shipment?.ScacAndService }}</p>
+                    <p><strong>Assigned To:</strong><br> {{ shipment?.AssignedToUserId }}</p>
+                    <p><strong>Ship To:</strong><br> {{ shipment?.ToAddress?.FirstName }} {{
+                        shipment?.ToAddress?.LastName }} <br> {{ shipment?.ToAddress?.AddressLine1 }}, {{
+                        shipment?.ToAddress?.AddressLine2 }} <br>
+                        {{ shipment?.ToAddress?.City }}, {{ shipment?.ToAddress?.State }}, {{
+                        shipment?.ToAddress?.ZipCode }} <br> {{ shipment?.ToAddress?.Country }} </p>
+                </div>
+                <div class="col">
+                    <br>
+                    <p><strong>Expected Ship Date:</strong> <br>
+                        {{ shipment?.ExpectedShipmentDate }}</p>
+                    <p><strong>Customer info:</strong><br> {{ shipment?.BillToAddress?.FirstName }} {{
+                        shipment?.BillToAddress?.LastName }} <br> {{ shipment?.BillToAddress?.Phonenumber }}
+                        <br> {{ shipment?.BillToAddress?.EmailID }}
+                    </p>
+                    <p><strong>Bill To:</strong><br> {{ shipment?.BillToAddress?.FirstName }} {{
+                        shipment?.BillToAddress?.LastName }} <br> {{ shipment?.BillToAddress?.AddressLine1 }},
+                        {{
+                        shipment?.BillToAddress?.AddressLine2 }} <br>
+                        {{ shipment?.BillToAddress?.City }}, {{ shipment?.BillToAddress?.State }}, {{
+                        shipment?.BillToAddress?.ZipCode }} <br> {{ shipment?.ToAddress?.Country }} </p>
+                </div>
+
+            </div>
+            <div *ngIf="hideData" class="row card-body bg-gradient mt-4">
+                <div class="col">
+                    <p class="badge bg-warning text-dark">{{ shipment?.Status }}</p>
+                    <p><strong>Shipment Number:</strong> <br>{{ shipment?.ShipmentNo }}</p>
+                </div>
+                <div class="col">
+                    <br>
+                    <p><strong>Expected Ship Date:</strong> <br>
+                        {{ shipment?.ExpectedShipmentDate }}</p>
+                </div>
+                <div class="col">
+                    <br>
+                    <p><strong>Ship To:</strong><br> {{ shipment?.ToAddress?.FirstName }} {{
+                        shipment?.ToAddress?.LastName }} <br> {{ shipment?.ToAddress?.AddressLine1 }}, {{
+                        shipment?.ToAddress?.AddressLine2 }} <br>
+                        {{ shipment?.ToAddress?.City }}, {{ shipment?.ToAddress?.State }}, {{
+                        shipment?.ToAddress?.ZipCode }} <br> {{ shipment?.ToAddress?.Country }} </p>
+                </div>
+
+            </div>
+            <button *ngIf="!hideData" type="button" class="btn btn-link hideView" (click)="hideView()">
+                Hide Details
+            </button>
+            <button *ngIf="hideData" type="button" class="btn btn-link showView" (click)="showView()">
+                Show Details
+            </button>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container mt-2">
+    <h5>Products {{ shipment['ShipmentLines'].TotalNumberOfRecords }}</h5>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let count of shipment['ShipmentLines'].ShipmentLine">
+            <div class="card">
+                <div class="card-body row">
+                    <div class="col-4">
+                        <img src="{{
+                            count?.OrderLine?.ItemDetails?.ImageUrl }}" class="rounded" width="100vh" height="100vh"
+                            alt="...">
+                    </div>
+                    <div class="col-8">
+                        <h6 class="card-title">{{
+                            count?.OrderLine?.ItemDetails?.Description }}</h6>
+                        <p class="card-text">Product ID: {{
+                            count?.OrderLine?.ItemDetails?.ItemID }}</p>
+                        <p class="card-text">Quantity: {{
+                            count?.Quantity }} {{
+                            count?.OrderLine?.ItemDetails?.DisplayUnitOfMeasure }}</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
