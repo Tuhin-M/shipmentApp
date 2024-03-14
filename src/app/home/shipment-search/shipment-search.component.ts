@@ -35,11 +35,15 @@ export class ShipmentSearchComponent {
       this.shipmentService.searchShipments(this.searchForm.value).subscribe(results => {
         if (results.length === 1) {
           this.router.navigate(['/shipments/details', results[0].ShipmentNo]);
-        } else {
+        } else if (hasValues && results.length === 0) {
+          alert('No data found');
+        }
+        else {
           this.router.navigate(['/shipments/results'], { state: { searchResults: results } });
         }
       });
-    } else {
+    }
+    else {
       this.router.navigate(['/shipments/results']);
     }
   }
